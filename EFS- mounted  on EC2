@@ -1,0 +1,17 @@
+========== EFS MOUNTED ON EC2 INSTANCE ===============
+
+step -1
+go to the EFS service 
+and create EFS as per your requirements
+go to the security group of efs allow port nfs 2049 
+
+
+step -2 
+launch ec2 instance save availability zone that you create efs
+then take ssh
+the 
+#vi /etc/fstab
+devicename           mountpoint filetype permission dumpvalue priority
+you get from efs     /mnt        nfs     defaults   0          0
+sevice  
+
